@@ -55,7 +55,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     /// Rect (in points) of shadow path of BMB.
     ///
     /// The default value is (2, 2, BMB.width - 4, BMB.height - 4).
-    @IBInspectable public var shadowPathRect: CGRect! {
+    public var shadowPathRect: CGRect! {
         didSet {
             if shadowPathRect != oldValue {
                 setNeedsDisplay()
